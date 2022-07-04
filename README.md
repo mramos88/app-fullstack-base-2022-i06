@@ -240,8 +240,7 @@ Si te gustó este proyecto y quisieras apoyarlo, cualquiera de estas acciones es
 
 Las colaboraciones principales fueron realizadas por:
 
-* **[Agustin Bassi](https://github.com/agustinBassi)**: Ideación, puesta en marcha y mantenimiento del proyecto.
-* **[Ernesto Giggliotti](https://github.com/ernesto-g)**: Creación inicial del frontend, elección de Material Design.
+* **[Matias Ramos](https://github.com/mramos88)**: Creación inicial del frontend, elección de Material Design.
 * **[Brian Ducca](https://github.com/brianducca)**: Ayuda para conectar el backend a la base de datos, puesta a punto de imagen de Docker.
 
 También podés mirar todas las personas que han participado en la [lista completa de contribuyentes](https://github.com/###/contributors).
