@@ -8,3 +8,7 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+.violeta{
+    background-color: blueviolet;
+}

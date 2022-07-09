@@ -5,6 +5,8 @@
       <link type="text/css" rel="stylesheet" href="./static/css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="./static/css/styles.css"  media="screen,projection"/>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/persona.js"></script>
+      <script type="text/javascript" src="js/admin.js"></script>
       <script type="text/javascript" src="js/user.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
 
@@ -24,14 +26,15 @@
             <!-- Page Body -->
             <div class="container">
                 <br/>
-                <h3>Smart Home Web Client!</h3>
+                <h3 id="btnDoble">Smart Home Web Client!</h3>
                 <br/>
                 <div class="row">
                     <div class="input-field col s12 m12 l12 xl12">
-                        <textarea id="textarea_1" class="materialize-textarea" style="height: 150px;" readonly>adsads</textarea>
+                        <textarea id="textarea_1" class="materialize-textarea" style="height: 150px;" readonly></textarea>
                     </div>
                     <div class="col s4 m4 l2 xl2">
-                        <button class="btn waves-effect waves-light button-view" onclick="SayHello();" name="hello_button">PRESS ME</button>
+                        <button id="btnSaludar" class="btn waves-effect waves-light button-view red"><i class="material-icons left">directions_run</i>Saludar</button>
+                        <button id="btnDoble2" class="btn waves-effect waves-light button-view red"><i class="material-icons left">cloud</i>Doble</button>
                     </div>
                 </div>
             </div>	
