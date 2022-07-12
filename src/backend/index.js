@@ -19,7 +19,7 @@ app.get('/devices/', function(req, res, next) {
             'id': 1, 
             'name': 'Lampara 1', 
             'description': 'Luz living', 
-            'state': 0, 
+            'state': 1, 
             'type': 1, 
         },
         { 
@@ -30,7 +30,11 @@ app.get('/devices/', function(req, res, next) {
             'type': 2, 
         },
     ]
-    res.send(JSON.stringify(devices)).status(200);
+    console.log("Alguien pidio divices!");
+    setTimeout(function(){
+        res.send(JSON.stringify(devices)).status(200);
+    }, 2000);
+    
 });
 
 app.listen(PORT, function(req, res) {
