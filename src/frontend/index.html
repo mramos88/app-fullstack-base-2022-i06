@@ -26,7 +26,41 @@
                 </div>
             </nav>	
             <!-- Page Body -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                <label>nombre</label>
+                  <input type="text">
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat" >Agree</a>
+                </div>
+              </div>
             <div class="container">
+                <button data-target="modal1" class="btn modal-trigger">Modal</button>
+                <div class="row">
+                    <div class="col s6 m12 xl6 borde">
+                        <div class="row">
+                            <div class="col s6 m12 xl6  input-field">
+                                <i class="material-icons prefix">assignment_ind</i>
+                                <label for="input1">Nombre</label>
+                                <input placeholder="Juan" type="text"  id="input1" >
+                        </div>
+                            <!-- text number password date-->
+                        </div>
+                    </div>
+                    <span class="col s0 m0 xl0" ></span>
+                    <div class="col s6 m12 xl6 input-field">
+                        <select id="tipo" class="icons" >
+                            <option value="" disabled selected>Seleecione una</option>
+                            <option value="1"  data-icon="./static/images/lightbulb.png">Option 1</option>
+                            <option value="2"  data-icon="./static/images/window.png">Option 2</option>
+                        </select>
+                          <label>Materialize Select</label>
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
                 <br/>
                 <h3 id="btnDoble">Smart Home Web Client!</h3>
                 <br/>

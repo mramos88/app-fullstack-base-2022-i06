@@ -16,3 +16,9 @@ main {
     color: brown;
     font-weight: bold;
 }
+.borde{
+    border: 1px solid black;
+}
+.input-field label {
+    color: rgb(233, 28, 28);
+  }

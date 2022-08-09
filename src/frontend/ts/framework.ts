@@ -26,4 +26,10 @@ class FrameWork{
         
      
   }
+
+  public recuperarElemento(id: string): HTMLElement{
+    let element = document.getElementById(id);
+    return element;
+
+  }
 }

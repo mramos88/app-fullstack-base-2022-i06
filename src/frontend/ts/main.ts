@@ -23,7 +23,10 @@ class Main implements EventListenerObject, ResponseLister {
             let resputa: Array<Device> = JSON.parse(resputaString);
             let cajaDiv = document.getElementById("caja");
 
-
+            cajaDiv.setAttribute("class", "talcoa");
+            cajaDiv.setAttribute("id", "otro");
+            cajaDiv.setAttribute("miAtt", "123");
+            let valor= cajaDiv.getAttribute("miAtt");
             let datosVisuale:string = `<ul class="collection">`
             for (let disp of resputa) {
                 datosVisuale += ` <li class="collection-item avatar">`;
@@ -50,6 +53,10 @@ class Main implements EventListenerObject, ResponseLister {
               </li>`
             }
             datosVisuale += `</ul>`
+          
+
+        
+
             cajaDiv.innerHTML = datosVisuale;
 
             for (let disp of resputa) {
@@ -84,7 +91,17 @@ class Main implements EventListenerObject, ResponseLister {
             
             alert("Hola " +  this.listaPersonas[0].nombre +" ");    
         } else {
-            alert("se hizo doble click en el titulo")
+            
+            let elemento = <HTMLInputElement>this.framework.recuperarElemento("input1");
+            if (elemento.value.length>5) {
+                
+                
+                M.toast({html: 'se cargo la info'})
+            } else {
+                alert("falta cargar el nombre o es menor a 5");    
+            }
+
+            
         }
     }
 }
@@ -92,7 +109,9 @@ class Main implements EventListenerObject, ResponseLister {
 window.addEventListener("load", () => {
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems,"");
-
+    M.updateTextFields();
+    var elems1 = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems1, "");
     let btn = document.getElementById("btnSaludar");
     let btn2 = document.getElementById("btnDoble");
     let main: Main = new Main();
